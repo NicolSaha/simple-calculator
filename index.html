@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Simple JavaScript Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="#" name="js-calculator" class="js-calculator">
+        <input type="number" name="firstnumber" id="firstnumber" placeholder="Number..." label="visually-hidden">
+        <select name="calc" value="calc" class="calc"> 
+            <option value="+">+</option> 
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" name="secondnumber" id="secondnumber" placeholder="Number..." label="visually-hidden">
+        <button id="btn-calc" type="button" data-action="calculate" >=</button>
+        <output type="text" id="result" name="result" value="result" placeholder="Result" for="firstValue secondValue"  placeholder="[Result]">
+<br>
+        <button data-action="clear">RESET</button>
+        </form>
+    </div class="container">
+
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
