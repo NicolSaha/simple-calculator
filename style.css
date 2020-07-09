@@ -35,8 +35,8 @@ body {
   background: linear-gradient(to right, #e9e4f0, #d3cce3);
 }
 
-h1{
-padding-top: 25px;
+h1 {
+  padding-top: 25px;
 }
 
 /*BUTTONS*/
@@ -72,6 +72,6 @@ button {
   margin-right: 15px;
 }
 
-label {
-  display: none;
+fieldset {
+  border: none;
 }

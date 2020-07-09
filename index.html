@@ -10,20 +10,19 @@
 <h1>Simple JavaScript Calculator</h1>
     <div class="container">
         <form action="#" name="js-calculator" class="js-calculator">
-        <label for="firstValue">First Value</label>
-        <input type="number" name="firstnumber" class="js-firstValue" id="firstnumber" placeholder="Number...">
+    <fieldset>
+        <label for="firstValue"><input type="number" name="firstnumber" class="js-firstValue" id="firstnumber" placeholder="Number..."></label>    
         <select name="calc" value="calc" class="js-calc" id="calc"> 
             <option value="+">+</option> 
             <option value="-">-</option>
             <option value="*">*</option>
             <option value="/">/</option>
         </select>
-       <label for="secondValue">Second Value</label>
-        <input type="number" name="secondnumber" class="js-secondValue" id="secondnumber" placeholder="Number...">
+       <label for="secondValue"><input type="number" name="secondnumber" class="js-secondValue" id="secondnumber" placeholder="Number..."></label>
         <button id="btn-calc" class="js-calculate-btn" type="button" data-action="calculate" >=</button>
-       <label for="output">Result</label>
-        <input type="text" id="output" class="js-output" name="output" value="output" placeholder="Result" disabled>
-        </form>
+       <label for="output"><input type="text" id="output" class="js-output" name="output" value="output" placeholder="Result" disabled></label>
+    </fieldset>   
+    </form>
     </div class="container">
 
     <script type="text/javascript" src="index.js"></script>
