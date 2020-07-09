@@ -7,21 +7,22 @@
     <title>Simple JavaScript Calculator</title>
 </head>
 <body>
-
+<h1>Simple JavaScript Calculator</h1>
     <div class="container">
         <form action="#" name="js-calculator" class="js-calculator">
-        <input type="number" name="firstnumber" id="firstnumber" placeholder="Number..." label="visually-hidden">
-        <select name="calc" value="calc" class="calc"> 
+        <label for="firstValue">First Value</label>
+        <input type="number" name="firstnumber" class="js-firstValue" id="firstnumber" placeholder="Number...">
+        <select name="calc" value="calc" class="js-calc" id="calc"> 
             <option value="+">+</option> 
             <option value="-">-</option>
             <option value="*">*</option>
             <option value="/">/</option>
         </select>
-        <input type="number" name="secondnumber" id="secondnumber" placeholder="Number..." label="visually-hidden">
-        <button id="btn-calc" type="button" data-action="calculate" >=</button>
-        <output type="text" id="result" name="result" value="result" placeholder="Result" for="firstValue secondValue"  placeholder="[Result]">
-<br>
-        <button data-action="clear">RESET</button>
+       <label for="secondValue">Second Value</label>
+        <input type="number" name="secondnumber" class="js-secondValue" id="secondnumber" placeholder="Number...">
+        <button id="btn-calc" class="js-calculate-btn" type="button" data-action="calculate" >=</button>
+       <label for="output">Result</label>
+        <input type="text" id="output" class="js-output" name="output" value="output" placeholder="Result" disabled>
         </form>
     </div class="container">
 

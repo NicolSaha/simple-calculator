@@ -1,24 +1,40 @@
+// Var declaration
+const firstValue = document.querySelector(".js-firstValue");
+const secondValue = document.querySelector(".js-secondValue");
+const operator = document.querySelector(".js-calc");
+const btn = document.querySelector(".js-calculate-btn");
+const output = document.querySelector(".js-output");
+
+// Calc function
 function calculate() {
-  let firstValue = document.getElementById("firstnumber").value;
-  let secondValue = document.getElementById("secondnumber").value;
-  let operator = document.getElementsByClassName("calc").value;
+  let input1 = Number(firstValue.value);
+  let operatorValue = operator.value;
+  let input2 = Number(secondValue.value);
 
-  let result = "";
-  if (operator === "+") {
-    result = firstValue + secondValue;
-  } else if (operator === "-") {
-    result = firstValue - secondValue;
-  } else if (operator === "*") {
-    result = firstValue * secondValue;
-  } else if (operator === "/") {
-    result = firstValue / secondValue;
-  } else if (operator == "NaN" || "+Infinity" || "-Infinity") {
-    result = "n/a";
+  let result;
+  if (operatorValue === "+") {
+    result = input1 + input2;
+    output.value = result.toString();
+  } else if (operatorValue === "-") {
+    result = input1 - input2;
+    output.value = result.toString();
+  } else if (operatorValue === "*") {
+    result = input1 * input2;
+    output.value = result.toString();
+  } else if (operatorValue === "/") {
+    result = (input1 / input2).toFixed(1);
+    output.value = result.toString();
+  } else {
+    if (output.value === "NaN" || "Infinity") {
+      output.value = "n/a";
+    }
   }
+}
 
-  document.getElementById("result").innerHTML = result;
-  return result;
-};
-
-const btn = document.getElementById("btn-calc");
+// addEventListener
 btn.addEventListener("click", calculate);
+firstValue.addEventListener("change", calculate);
+firstValue.addEventListener("keyup", calculate);
+operator.addEventListener("change", calculate);
+secondValue.addEventListener("change", calculate);
+secondValue.addEventListener("keyup", calculate);
