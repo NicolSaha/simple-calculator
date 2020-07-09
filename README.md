@@ -1,4 +1,4 @@
-# simple-calculator
+# simple-calculator 
 
 Create a simple calculator.
 
@@ -8,5 +8,5 @@ Create a simple calculator.
 ## Hosted on 
 - [Github Pages](https://nicolsaha.github.io/simple-calculator/)
 
-### Open Sourced
-By [Nicol Saha :)](https://github.com/NicolSaha)
+## Open Sourced
+By [Nicol Saha :ghost:](https://github.com/NicolSaha)
